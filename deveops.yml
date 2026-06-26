@@ -1,0 +1,17 @@
+name: DevOps Pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome
+        run: echo "DevOps Pipeline Running"
+
+      - name: Show Date
+        run: date
+
+      - name: List Files
+        run: ls -la
